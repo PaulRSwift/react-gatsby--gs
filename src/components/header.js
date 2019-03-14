@@ -1,42 +1,51 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+export default () => (
+  <div class="header">
+    <div class="header-inner--wrapper ">
+      <h1>Gulfstream</h1>
+      <ul class="header-nav-triplet">
+        <li class="header-subnav-anchor--aircraft">
+          <h4>Aircraft</h4>
+          <ul class="header-accordion">
+            <li>
+              <a
+                href="http://www.gulfstream.com/aircraft/gulfstream-g650er"
+                title="G650ER: new tab"
+                target="_blank"
+              >
+                G650ER
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.gulfstream.com/aircraft/gulfstream-g650"
+                title="G650"
+              >
+                G650
+              </a>
+            </li>
+            <li>
+              <a href="#">G600</a>
+            </li>
+            <li>
+              <a href="#">G500</a>
+            </li>
+            <li>
+              <a href="#">G550</a>
+            </li>
+            <li>
+              <a href="#">G280</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Support</h4>
+        </li>
+        <li>
+          <h4>Contact</h4>
+        </li>
+      </ul>
     </div>
-  </header>
+  </div>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
