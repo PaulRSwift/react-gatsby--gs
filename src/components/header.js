@@ -1,10 +1,14 @@
 import React from "react"
+import { FaBeer } from "react-icons/fa"
 
 export default () => (
   <div class="header">
     <div class="header-inner--wrapper ">
       <h1>Gulfstream</h1>
       <ul class="header-nav-triplet">
+        <li>
+          <FaBeer />
+        </li>
         <li class="header-subnav-anchor--aircraft">
           <h4>Aircraft</h4>
           <ul class="header-accordion">

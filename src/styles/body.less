@@ -6,7 +6,7 @@
   }
   .body-content--flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-betweceen;
     align-items: center;
     border: 1px solid black;
     margin: 40px 0 0;
@@ -27,8 +27,45 @@
   }
 
   .body-content-right {
+    background-color: #2b455d;
+    color: white;
     .flex-child:last-of-type {
       order: -1;
+    }
+  }
+
+  .body-contact {
+    margin: 40px auto;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .body-contact--inner {
+    margin: 0 auto;
+  }
+
+  form {
+    text-align: right;
+  }
+
+  .body--contact--input {
+    input {
+      margin: 0 0 10px 10px;
+      line-height: 20px;
+    }
+
+    input[type="text"] {
+      width: 200px;
+    }
+
+    &.input--lg {
+      input {
+        line-height: 150px;
+      }
+
+      label {
+        vertical-align: top;
+      }
     }
   }
 }

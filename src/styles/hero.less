@@ -1,12 +1,47 @@
-.hero--image {
-  // background-image: url("/images/g500_hero_image.jpg");
-  padding-bottom: 56.25%; // 1080 divided by 1920 to hold aspect ratio of image
+.hero--wrapper {
+  position: relative;
+}
 
-  // //   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+.hero--image {
+  padding-bottom: 100vw; // 1080 divided by 1920 to hold aspect ratio of image
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  // position: relative;
   z-index: 5;
-  // position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: normal;
+    color: white;
+    font-size: 1.5em;
+    transform: scale(0);
+    animation: 1s zoom 1.5s ease-in-out forwards;
+  }
+
+  b {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  span {
+    font-family: cursive;
+  }
+}
+
+@keyframes zoom {
+  100% {
+    transform: scale(1);
+  }
 }

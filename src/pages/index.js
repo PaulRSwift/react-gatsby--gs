@@ -1,10 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
-
-// import Layout from "../components/layout"
-import Image from "../components/image"
-// import SEO from "../components/seo"
-
+// import Image from "../components/image"
 import Header from "../components/header"
 import Hero from "../components/hero.js"
 import Body from "../components/body.js"

@@ -41,6 +41,16 @@ export default () => (
       class="hero--image"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     />
+    <div class="hero-overlay">
+      <div class="hero-overlay--inner">
+        <h3>
+          Creating and Delivering the{" "}
+          <b>
+            World's <span>Finest</span> Aviation Experience
+          </b>
+        </h3>
+      </div>
+    </div>
   </div>
 )
 

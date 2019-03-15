@@ -1,20 +1,25 @@
 import React from "react"
 
-// let oldYear = document.getElementById("footer--copywrite-year")
+function autoCopyright() {
+  let currentDate = document.getElementsByClassName("footer--copywrite-year")
 
-// console.log("oldyear" + oldYear)
-// // var year = oldYear.getFullYear()
+  for (let i = 0; i < currentDate.length; i++) {
+    var d = new Date()
+    currentDate[i].innerHTML = d.getFullYear()
+  }
+}
+
+autoCopyright()
 
 export default () => (
   <div class="footer">
     <div class="footer--inner">
       <div class="footer-copy-container">
-        <h2>Gulfstream Aerospace Corporation</h2>
-        <div>
-          <h2>
-            &#169; <span id="footer--copywrite-year">2018 </span>
-          </h2>
-        </div>
+        <h2>Gulfstream Aerospace Corporation </h2>
+        <h2>
+          {" "}
+          &#169; <span class="footer--copywrite-year" />
+        </h2>
       </div>
     </div>
   </div>
