@@ -3,7 +3,7 @@
 }
 
 .hero--image {
-  padding-bottom: 100vw; // 1080 divided by 1920 to hold aspect ratio of image
+  padding-bottom: 100vw;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 5;
@@ -43,5 +43,18 @@
 @keyframes zoom {
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero--image {
+    padding-bottom: 56%; // 1080 divided by 1920 to hold aspect ratio of image
+    background-attachment: inherit;
+  }
+
+  .hero-overlay {
+    margin-left: 4%;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
 }
